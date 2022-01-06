@@ -26,57 +26,121 @@
         margin-top:0;
         margin-bottom:0;
       }
+      .font4{
+        font-size: 50px;
+        margin-bottom: 8px;
+        font-weight:700;
+      }
+      .font5{
+        font-size: 26px;
+        margin-top:19.5px;
+        margin-bottom: 6.5px;
+        font-weight:400;
+      }
       #box1{
         background-image: url("background.jpg");
         height: 700px;
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.4);
+        display: grid;
+        grid-row: auto;
+        border-bottom: 8px solid #222222;
+      }
+      #header{
+        margin-left: 56px;
+        margin-right: 56px;
+        margin-top:20px;
+      }
+      #logo{
+        width:134px;
+        height:36px;
+      }
+      #main{
         text-align: center;
 
       }
+
+      #box2{
+        height: 480px;
+        display: grid;
+        padding-top:70px;
+        padding-bottom: 70px;
+        padding-left: 45px;
+        padding-right: 45px;
+
+        grid-template-columns: 1fr 1fr;
+
+      }
+  /*    #box3{
+        height: 480px;
+        display: grid;
+        grid-template-columns: auto;
+      }
+      #box4{
+        height: 480px;
+        display: grid;
+        grid-template-columns: auto;
+      }
+      #box5{
+        height: 480px;
+        display: grid;
+        grid-template-columns: auto;
+      }
+      */
     </style>
 
 </head>
 <body>
   <div id="box1">
+    <div id="header">
+      <img id="logo" src="logo.png">
+    </div>
+
+    <div id="main">
     <p class ="font1"> Unlimited movies, TV <br> shows, and more.</p>
     <p class ="font2"> Watch anywhere. Cancel anytime.</p>
     <p class ="font3">Ready to watch? Enter your email to create or restart your membership.</p>
+    </div>
+
     <div id="email">
 
     </div>
   </div>
 
   <div id="box2">
-    <p>Enjoy on your TV.</p>
-    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    <div >
+      <p class="font4">Enjoy on your TV.</p>
+      <p class="font5">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+    </div>
+    <img src="tv.png">
   </div>
 
   <div id="box3">
-    <p>Download your shows to watch offline.</p>
-    <p>Save your favorites easily and always have something to watch.</p>
+    <p class="font4">Download your shows to watch offline.</p>
+    <p class="font5">Save your favorites easily and always have something to watch.</p>
   </div>
 
   <div id="box4">
-    <p>Watch everywhere.</p>
-    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+    <p class="font4">Watch everywhere.</p>
+    <p class="font5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
   </div>
 
   <div id="box5">
-    <p>Create profiles for kids.</p>
-    <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    <p class="font4">Create profiles for kids.</p>
+    <p class="font5">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
   </div>
 
   <div id="box6">
-    <p>Frequently Asked Questions</p>
+    <p class="font4">Frequently Asked Questions</p>
     <ul>
-        <li> What is Netflix? </li>
-        <li> How much does Netflix cost? </li>
-        <li> Where can I watch? </li>
-        <li> How do I cancel? </li>
-        <li> What can I watch on Netflix? </li>
-        <li> Is Netflix good for kids? </li>
+        <li class="font5"> What is Netflix? </li>
+        <li class="font5"> How much does Netflix cost? </li>
+        <li class="font5"> Where can I watch? </li>
+        <li class="font5"> How do I cancel? </li>
+        <li class="font5"> What can I watch on Netflix? </li>
+        <li class="font5"> Is Netflix good for kids? </li>
     </ul>
 
-    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+    <p class="font3">Ready to watch? Enter your email to create or restart your membership.</p>
     <div id="email">
 
     </div>
