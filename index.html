@@ -18,18 +18,20 @@
       .font2{
         font-size: 26px;
         margin-top: 16px;
-        margin-bottom: 16px;
+        margin-bottom:29.6px;
         font-weight: 400;
       }
       .font3{
         font-size: 19px;
         margin-top:0;
         margin-bottom:0;
+        padding-bottom:20px;
       }
       .font4{
         font-size: 50px;
         margin-bottom: 8px;
         font-weight:700;
+
       }
       .font5{
         font-size: 26px;
@@ -59,36 +61,84 @@
 
       }
 
-      #box2{
-        height: 480px;
+      .container{
         display: grid;
         padding-top:70px;
         padding-bottom: 70px;
         padding-left: 45px;
         padding-right: 45px;
-
+        border-bottom: 8px solid #222222;
         grid-template-columns: 1fr 1fr;
 
       }
-  /*    #box3{
-        height: 480px;
+      .textbox{
+        height:325px;
+        margin-left: 30px;
+      }
+
+      #tv{
+        width: 504.953px;
+        height: 325.922px;
+        margin-left: 60px;
+      }
+      #mobile{
+        width:504.953px;
+        height: 378.703px;
+      }
+      #device-pile{
+        width:555.438px;
+        height: 416.578px;
+      }
+      #kids{
+        width:504.953px;
+        height:378.703px;
+      }
+      .FAQ{
         display: grid;
         grid-template-columns: auto;
+        border-bottom: 8px solid #222222;
+        margin-bottom:100px;
       }
-      #box4{
-        height: 480px;
-        display: grid;
-        grid-template-columns: auto;
+      #qna1{
+        text-align: center;
       }
-      #box5{
-        height: 480px;
-        display: grid;
-        grid-template-columns: auto;
+      ul {
+        list-style: none;
+        padding-left: 237px;
+        padding-right: 233px;
       }
-      */
+      li {
+        background-color:#303030;
+        padding-top: 20.8px;
+        padding-bottom: 20.9px;
+        padding-right: 31.2px;
+        padding-left: 57.2px;
+      }
+      .emailbox{
+        text-align: center;
+      }
+      #input1{
+        width: 450px;
+        height: 60px;
+        border:0px;
+        padding: 0px;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      #input2{
+        width: 214.062px;
+        height:60px;
+        border:0px;
+        padding: 0px;
+        font-size: 26px;
+        font-weight: 400;
+        color:white;
+        background-color:#F40612;
+      }
     </style>
 
 </head>
+
 <body>
   <div id="box1">
     <div id="header">
@@ -98,39 +148,53 @@
     <div id="main">
     <p class ="font1"> Unlimited movies, TV <br> shows, and more.</p>
     <p class ="font2"> Watch anywhere. Cancel anytime.</p>
-    <p class ="font3">Ready to watch? Enter your email to create or restart your membership.</p>
+    <div class="emailbox">
+      <p class ="font3">Ready to watch? Enter your email to create or restart your membership.</p>
+      </div>
+        <form method="post">
+          <input id="input1" type="text" placeholder="Email address">
+          <input id="input2" type="submit" value="Get Started" >
+
+        </form>
     </div>
 
-    <div id="email">
-
-    </div>
   </div>
 
-  <div id="box2">
-    <div >
+  <div class="container">
+    <div class="textbox">
       <p class="font4">Enjoy on your TV.</p>
       <p class="font5">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
     </div>
-    <img src="tv.png">
+    <img src="tv.png" id ="tv">
   </div>
 
-  <div id="box3">
-    <p class="font4">Download your shows to watch offline.</p>
-    <p class="font5">Save your favorites easily and always have something to watch.</p>
+  <div class="container">
+    <img src="mobile.jpg" id="mobile">
+    <div class="textbox">
+      <p class="font4">Download your shows to watch offline.</p>
+      <p class="font5">Save your favorites easily and always have something to watch.</p>
+    </div>
   </div>
 
-  <div id="box4">
-    <p class="font4">Watch everywhere.</p>
-    <p class="font5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+  <div class="container">
+    <div class="textbox">
+      <p class="font4">Watch everywhere.</p>
+      <p class="font5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p>
+    </div>
+    <img src="device-pile.png" id="device-pile">
   </div>
 
-  <div id="box5">
-    <p class="font4">Create profiles for kids.</p>
-    <p class="font5">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+  <div class="container">
+    <img src="kids.png" id="kids">
+    <div class="textbox">
+      <p class="font4">Create profiles for kids.</p>
+      <p class="font5">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+    </div>
+
   </div>
 
-  <div id="box6">
-    <p class="font4">Frequently Asked Questions</p>
+  <div class="FAQ">
+    <p class="font4" id="qna1">Frequently Asked Questions</p>
     <ul>
         <li class="font5"> What is Netflix? </li>
         <li class="font5"> How much does Netflix cost? </li>
@@ -139,11 +203,15 @@
         <li class="font5"> What can I watch on Netflix? </li>
         <li class="font5"> Is Netflix good for kids? </li>
     </ul>
+    <div class="emailbox">
+      <p class="font3">Ready to watch? Enter your email to create or restart your membership.</p>
+      <form method="post">
+        <input id="input1" type="text" placeholder="Email address">
+        <input id="input2" type="submit" value="Get Started" >
 
-    <p class="font3">Ready to watch? Enter your email to create or restart your membership.</p>
-    <div id="email">
-
+      </form>
     </div>
+
   </div>
 </body>
 </html>
